@@ -1,2 +1,2 @@
 #!/bin/bash
-CNEW=$(basename ${CFILE%.C}); gcc -c $CFILE -o $CNEW.o
+gcc -c $CFILE -o ${CFILE%.c}.o
