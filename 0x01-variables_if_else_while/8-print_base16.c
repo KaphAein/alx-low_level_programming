@@ -11,7 +11,7 @@ int main(void)
 char hxdc;
 hxdc = '0';
 
-while (alphabet <= '9')
+while (hxdc <= '9')
 {
 putchar(hxdc);
 hxdc++;
