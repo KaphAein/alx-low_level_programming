@@ -21,10 +21,14 @@ putchar(44);
 putchar(32);
 intgrs++;
 }
+
 else
 {
 intgrs++;
 }
+ 
 }
+
+putchar('\n')
 return (0);
 }
