@@ -22,13 +22,9 @@ if (i != 56)
 {
 putchar(44);
 putchar(32);
+}
+}
 i++;
-}
-else
-{
-i++;
-}
-}
 j = i;
 }
 putchar('\n');
