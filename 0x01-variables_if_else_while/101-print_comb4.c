@@ -12,23 +12,25 @@ int i;
 int j;
 int k;
 i = j = k = 48;
-while (i <  57)
-{
-while (j < 57)
+while (i <=  55)
 {
 j = i + 1;
-while (k < 57)
+while (j <= 56)
 {
 k = j + 1;
+while (k <= 57)
+{
 putchar(i);
 putchar(j);
 putchar(k);
-if (k != 57)
+if (k != 57 || j != 56  || i != 55)
 {
 putchar(44);
 putchar(32);
 }
+k++;
 }
+j++;
 }
 i++;
 }
