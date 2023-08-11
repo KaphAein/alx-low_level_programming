@@ -8,15 +8,19 @@
 
 int main(void)
 {
-int intgrs;
-intgrs = 48;
-
-while (intgrs <= 57)
+int i;
+int j;
+i = j = 48;
+while (i <  57)
 {
-putchar(intgrs);
-putchar(44);
-putchar(32);
-intgrs++;
+putchar(i);
+while (j <= 57)
+{
+j++;
+putchar(j);
+}
+i++;
+j = i;
 }
 putchar('\n');
 return (0);
