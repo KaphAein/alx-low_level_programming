@@ -22,11 +22,11 @@ if (i != 56)
 {
 putchar(44);
 putchar(32);
-i++
+i++;
 }
 else
 {
-i++
+i++;
 }
 }
 j = i;
