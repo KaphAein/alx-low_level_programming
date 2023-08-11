@@ -8,13 +8,15 @@
 
 int main(void)
 {
-char alphabet;
-alphabet = 'a';
+int intgrs;
+intgrs = 48;
 
-while (alphabet <= 'z')
+while (intgrs <= 57)
 {
-putchar(alphabet);
-alphabet++;
+putchar(intgrs);
+putchar(44);
+putchar(32);
+intgrs++;
 }
 putchar('\n');
 return (0);
