@@ -13,16 +13,18 @@ intgrs = 48;
 
 while (intgrs <= 57)
 {
+putchar(intgrs);
+
 if (intgrs != 57)
 {
-putchar(intgrs);
 putchar(44);
 putchar(32);
 intgrs++;
 }
 else
 {
-putchar(intgrs);
+intgrs++;
+}
 }
 return (0);
 }
