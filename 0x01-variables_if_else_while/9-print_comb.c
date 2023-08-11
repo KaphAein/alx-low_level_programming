@@ -11,14 +11,16 @@ int main(void)
 int intgrs;
 intgrs = 48;
 
-if (intgrs < 57)
+while (intgrs <= 57)
+{
+if (intgrs != 57)
 {
 putchar(intgrs);
 putchar(44);
 putchar(32);
 intgrs++;
 }
-else if (intgrs == 57)
+else
 {
 putchar(intgrs);
 }
