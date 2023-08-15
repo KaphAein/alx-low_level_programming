@@ -14,7 +14,14 @@ int print_last_digit(int num)
 
 	if (num < 0)
 	{
- 		num = -num;
+		num = -num;
+		res = num % 10;
+		_putchar(res + '0');
+		return (res);
+	}
+	else if (num == INT_MIN)
+	{
+		num = -(INT_MIN);
 		res = num % 10;
 		_putchar(res + '0');
 		return (res);
