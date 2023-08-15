@@ -6,6 +6,7 @@
 
 	 while (i<=122)
 	 {
-		 _printchar(i);
+		 _putchar(i);
 		 i++;
 	 }
+ }
