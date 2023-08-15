@@ -1,28 +1,30 @@
 #include "main.h"
-#include <limits.h>
 
 /**
- *  print_last_digit - function that prints last digit.
- * @num: integer to be checked.
+ * times_table - function that prints multiplications table.
  *
- * Return: last digit
+ *
  */
 
-int print_last_digit(long num)
+void times_table(void);
 {
-	long res;
+	int i;
+	int j;
+	int mult;
 
-	if (num < 0)
+	i = 0;
+	while (i <= 9)
 	{
-		num = -num;
-		res = num % 10;
-		_putchar(res + '0');
-		return (res);
-	}
-	else
-	{
-		res = num % 10;
-		_putchar(res + '0');
-		return (res);
+		j = 0;
+		while (j <= 9)
+		{
+			mult = i x j;
+			_putchar(mult + '0');
+			_putchar(',');
+			_putchar(' ');
+			j++;
+		}
+		_putchar('\n');
+		i++;
 	}
 }
