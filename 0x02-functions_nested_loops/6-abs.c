@@ -2,7 +2,7 @@
 
 /**
  * _abs - function that removes sign of number.
- * @n: integer to be checked.
+ * @num: integer to be checked.
  *
  * Return: absolute value of integer.
  */
