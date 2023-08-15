@@ -39,6 +39,7 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			}
 			else if (mult >= 10 && j == 9)
 			{
 				mult = i * j;
