@@ -8,20 +8,13 @@
  * Return: last digit
  */
 
-int print_last_digit(int num)
+int print_last_digit(long num)
 {
-	int res;
+	long res;
 
 	if (num < 0)
 	{
 		num = -num;
-		res = num % 10;
-		_putchar(res + '0');
-		return (res);
-	}
-	else if (num == INT_MIN)
-	{
-		num = 2147483648;
 		res = num % 10;
 		_putchar(res + '0');
 		return (res);
