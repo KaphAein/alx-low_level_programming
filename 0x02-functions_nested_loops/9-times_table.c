@@ -46,7 +46,7 @@ void times_table(void)
 			_putchar(mult / 10+ '0');
 			_putchar(mult % 10+ '0');
 			}
-			j++
+			j++;
 		}
 		_putchar('\n');
 		i++;
