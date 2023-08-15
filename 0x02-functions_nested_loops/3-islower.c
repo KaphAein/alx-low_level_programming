@@ -2,9 +2,9 @@
 
 /**
  * _islower - function tests for any lower-case letters.
+ *@c: The character to be checked.
  *
- * c: ASCII integer representation of lower-case letters.
- * return: integer 1 (true), 0 (failure)
+ * Return: 1 if the character is lowercase, 0 otherwise.
  */
 
 int _islower(int c)
