@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  *  print_to_98 - function that prints numbers up to 98.
@@ -9,35 +9,25 @@
 
 void print_to_98(int n)
 {
-	if (n <= 98)
+	int i;
+
+	if (n < 98)
 	{
-		while (n <= 98)
+		for (i = n; i < 98, i++)
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			n++;
+			printf("%d", n);
+			puts(", ");
 		}
-		_putchar('\n');
 	}
-	else
-	{
-		while (n >= 98)
+	int i;
+
+	if (n > 98)
+    {
+        for (i = n; i > 98, i--)
 		{
-			_putchar(n / 100 + '0');
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			n--;
+			printf("%d", n);
+			puts(", ");
 		}
-		_putchar('\n');
 	}
+	printf("98\n");
 }
