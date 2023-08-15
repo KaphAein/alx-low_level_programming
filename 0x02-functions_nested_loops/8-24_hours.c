@@ -19,15 +19,15 @@ void jack_bauer(void)
 	while (i < 24)
 	{
 		j = 0;
-		firsthour = i / 10;
-		seconhour = i % 10;
-		_putchar(firsthour + '0');
-		_putchar(seconhour + '0');
-		_putchar(':');
 		while (j < 60)
 		{
 			firstmin = j / 10;
 			secondmin = j % 10;
+			firsthour = i / 10;
+			seconhour = i % 10;
+			_putchar(firsthour + '0');
+			_putchar(seconhour + '0');
+			_putchar(':');
 			_putchar(firstmin + '0');
 			_putchar(secondmin + '0');
 			_putchar('\n');
