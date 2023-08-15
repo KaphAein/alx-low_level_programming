@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _islower(int c) - function tests for any lower-case letters.
- *
- * return: int
+ * _islower - function tests for any lower-case letters.
+ * c: ASCII integer representation of lower-case letters.
+ * return: integer 1 (true), 0 (failure)
  */
 
 int _islower(int c)
