@@ -8,47 +8,27 @@
 
 void times_table(void)
 {
-	int i;
-	int j;
-	int mult;
+    int i, j;
 
-	i = 0;
-	while (i <= 9)
-	{
-		j = 0;
-		while (j <= 9)
-		{
-			if (mult < 10 && j != 9)
-			{
-			mult = i * j;
-			_putchar(mult + '0');
-			_putchar(',');
+    for (i = 0; i <= 9; i++)
+    {
+        _putchar('0');
+        for (j = 1; j <= 9; j++)
+        {
+            _putchar(',');
+            _putchar(' ');
 			_putchar(' ');
-			_putchar(' ');
-			}
-			if (mult < 10 && j == 9)
+            int mult = i * j;
+            if (mult < 10)
 			{
-			mult = i * j;
-			_putchar(mult + '0');
+                _putchar(' ');
+				_putchar(' ');
 			}
-			else if (mult >= 10 && j != 9)
-			{
-			mult = i * j;
-			_putchar(mult / 10 + '0');
-			_putchar(mult % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			}
-			else if (mult >= 10 && j == 9)
-			{
-				mult = i * j;
-			_putchar(mult / 10+ '0');
-			_putchar(mult % 10+ '0');
-			}
-			j++;
-		}
-		_putchar('\n');
-		i++;
-	}
+            else
+                _putchar(mult / 10 + '0');
+
+            _putchar(mult % 10 + '0');
+        }
+        _putchar('\n');
+    }
 }
