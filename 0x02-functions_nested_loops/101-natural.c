@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -8,13 +9,12 @@
 
 int main(void)
 {
-	int n, sum;
+	int sum;
 
-	n = 0;
 	sum = 0;
-	for (n; n < 1024; n++)
+	for (int n = 0; n < 1024; n++)
 	{
-		for (n % 3 = 0 || n % 5 = 0)
+		for (n % 3 == 0 || n % 5 == 0)
 		{
 			sum = sum + n;
 		}
