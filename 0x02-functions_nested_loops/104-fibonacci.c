@@ -40,8 +40,8 @@ int main(void)
 			printf("%ld", sum1 + (sum2 / l));
 			printf("%ld", sum2 % l);
 			a1 = b1;
-			a2 = b2;
 			b1 = sum1;
+			a2 = b2;
 			b2 = sum2;
 		}
 	}
