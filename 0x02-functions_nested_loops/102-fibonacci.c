@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int i, a, b, sum;
+	int i;
+	unsigned long a, b, sum;
 
 	a = 1;
 	b = 2;
