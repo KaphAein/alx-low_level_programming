@@ -13,6 +13,7 @@ int main(void)
 
 	a = 1;
 	b = 2;
+	sumofsums = 0;
 	for (i = 0; i < 48; i++)
 	{
 		sum = a + b;
