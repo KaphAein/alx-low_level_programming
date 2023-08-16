@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - checks code.
  *
  * Return: Always 0 (Success)
  */
