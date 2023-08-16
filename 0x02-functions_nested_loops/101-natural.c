@@ -1,4 +1,5 @@
-#include <stdio.h>
+
+0;276;0c#include <stdio.h>
 
 /**
  * main - Entry point
@@ -9,9 +10,9 @@
 int main(void)
 {
 	int sum = 0;
-	int n = 0;
+	int n;
 
-	for (n; n < 1024; n++)
+	for (n = 0; n < 1024; n++)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
 			sum = sum + n;
