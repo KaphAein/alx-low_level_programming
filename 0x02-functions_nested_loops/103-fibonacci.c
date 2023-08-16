@@ -24,7 +24,7 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-	printf("%ld", sumofsums);
+	printf("%ld", sumofsums + 2);
 	printf("\n");
 	return (0);
 }
