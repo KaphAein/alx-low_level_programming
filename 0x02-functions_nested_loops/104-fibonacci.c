@@ -36,6 +36,8 @@ int main(void)
 
 		if (i > 88)
 		{
+			sum1 = a1 + b1;
+			sum2 = a2 + b2;
 			printf(", ");
 			printf("%ld", sum1 + (sum2 / l));
 			printf("%ld", sum2 % l);
