@@ -22,20 +22,22 @@ void print_times_table(int n)
 				mult = i * j;
 				if (mult < 10)
 				{
+					_putchar((mult % 10) + '0');
 					_putchar(' ');
 					_putchar(' ');
 				}
 				else if (mult >= 10 && mult < 100)
 				{
-					_putchar(mult / 10 + '0');
+					_putchar((mult / 10) + '0');
+					_putchar((mult % 10) + '0');
 					_putchar(' ');
 				}
 				else
 				{
-					_putchar(mult / 100 + '0');
-					_putchar(mult / 10 + '0');
+					_putchar((mult / 100) + '0');
+					_putchar((mult / 10) + '0');
+					_putchar(mult % 10 + '0');
 				}
-				_putchar(mult % 10 + '0');
 			}
 			_putchar('\n');
 		}
