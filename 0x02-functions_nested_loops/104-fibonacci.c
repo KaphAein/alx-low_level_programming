@@ -15,37 +15,31 @@ int main(void)
 	a = 1;
 	b = 2;
 	printf("%ld, %ld", a, b);
-	for (i = 0; i < 96; i++)
+	for (i = 0; i <= 88; i++)
 	{
-
-		if (i <= 88)
-		{
 		sum = a + b;
 		printf(", ");
 		printf("%ld", sum);
 		a = b;
 		b = sum;
-		}
-
-		a1 = (a / l);
-		a2 = (a % l);
-		b1 = (b / l);
-		b2 = (b % l);
-		sum1 = (sum / l);
-		sum2 = (sum % l);
-
-		if (i > 88)
-		{
-			sum1 = a1 + b1;
-			sum2 = a2 + b2;
-			printf(", ");
-			printf("%ld", sum1 + (sum2 / l));
-			printf("%ld", sum2 % l);
-			a1 = b1;
-			b1 = sum1;
-			a2 = b2;
-			b2 = sum2;
-		}
+	}
+	a1 = (a / l);
+	a2 = (a % l);
+	b1 = (b / l);
+	b2 = (b % l);
+	sum1 = (sum / l);
+	sum2 = (sum % l);
+	for (i = 89; i < 96; i++)
+	{
+		sum1 = a1 + b1;
+		sum2 = a2 + b2;
+		printf(", ");
+		printf("%ld", sum1 + (sum2 / l));
+		printf("%ld", sum2 % l);
+		a1 = b1;
+		b1 = sum1;
+		a2 = b2;
+		b2 = sum2;
 	}
 	printf("\n");
 	return (0);
