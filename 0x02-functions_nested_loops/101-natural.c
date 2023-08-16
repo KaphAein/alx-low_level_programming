@@ -16,6 +16,6 @@ int main(void)
 		if (n % 3 == 0 || n % 5 == 0)
 			sum = sum + n;
 	}
-	printf ("sum of natural numbers below 1024 = %d", sum);
-    return (0);
+	printf("%d", sum);
+	return (0);
 }
