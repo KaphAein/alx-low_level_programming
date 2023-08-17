@@ -8,11 +8,10 @@
 
 int main(void)
 {
-	unsigned long long a, f;
+	long int a, f;
 
 	a = 612852475143;
-	f = 2;
-	for (f; a / f > 1; f++)
+	for (f = 2; a / f > 1; f++)
 	{
 		if (a % f == 0)
 		{
@@ -21,6 +20,6 @@ int main(void)
 		else
 			continue;
 	}
-	printf("%llu\n", a);
+	printf("%ld\n", a);
 	return (0);
 }
