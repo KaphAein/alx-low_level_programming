@@ -1,39 +1,29 @@
 #include "main.h"
 
 /**
- * print_number - prints number
- * @n: number to be printed
+ * print_number - a function print a number.
+ * @n : the number
  *
- * Return: void
  */
 
 void print_number(int n)
 {
-	int divisor, digit;
+	unsigned int i;
 
-	divisor = 1;
-	if (n >= 0)
-	{
-		while ((n / divisor) >= 10)
-			divisor *= 10;
-		while (divisor > 0)
-		{
-			digit = (n / divisor) % 10;
-			_putchar(digit + '0');
-			divisor /= 10;
-		}
-	}
 	if (n < 0)
 	{
-		n = -n;
-		_putchar(45);
-		while ((n / divisor) >= 10)
-			divisor *= 10;
-		while (divisor > 0)
-		{
-			digit = (n / divisor) % 10;
-			_putchar(digit + '0');
-			divisor /= 10;
-		}
+		i = -n;
+		_putchar('-');
 	}
+	else
+	{
+		i = n;
+	}
+
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+
+	_putchar((i % 10) + '0');
 }
