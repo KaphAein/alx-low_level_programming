@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_number -  prints number
- * @n: number to be printed.
+ * print_number - prints number
+ * @n: number to be printed
  *
- * Return: void.
+ * Return: void
  */
 
 void print_number(int n)
@@ -12,7 +12,6 @@ void print_number(int n)
 	int divisor, digit;
 
 	divisor = 1;
-
 	if (n >= 0)
 	{
 		while ((n / divisor) >= 10)
