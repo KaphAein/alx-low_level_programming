@@ -20,7 +20,7 @@ int main(void)
 			printf("FIzzBuzz");
 		else
 			printf("%d ", i);
-		pritnf(" ");
+		printf(" ");
 	}
 	return (0);
 }
