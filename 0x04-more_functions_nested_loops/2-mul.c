@@ -7,9 +7,9 @@
  * Return: 0 success.
  */
 
-int mul(long a, long b)
+int mul(int a, int b)
 {
-	long mult, divisor, digit;
+	int mult, divisor, digit;
 
 	mult = a * b;
 	divisor = 1;
