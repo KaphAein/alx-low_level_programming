@@ -20,7 +20,7 @@ void print_number(int n)
 		while (divisor > 0)
 		{
 			digit = (n / divisor) % 10;
-			putchar(digit + '0');
+			_putchar(digit + '0');
 			divisor /= 10;
 		}
 	}
@@ -32,10 +32,10 @@ void print_number(int n)
 			divisor *= 10;
 		while (divisor > 0)
 		{
-			digit = (mult / divisor) % 10;
-			putchar(digit + '0');
+			digit = (n / divisor) % 10;
+			_putchar(digit + '0');
 			divisor /= 10;
 		}
 	}
-	_puthcar('\n');
+	_putchar('\n');
 }
