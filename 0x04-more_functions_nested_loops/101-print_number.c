@@ -27,7 +27,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		n = -n;
-		_putchar('-');
+		_putchar(45);
 		while ((n / divisor) >= 10)
 			divisor *= 10;
 		while (divisor > 0)
