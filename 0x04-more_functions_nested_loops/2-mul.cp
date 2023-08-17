@@ -7,11 +7,11 @@
  * Return: 0 success.
  */
 
-int mul(long a, long b)
+int mul(int a, int b)
 {
-	long mult, divisor, digit;
+	int mult, divisor, digit;
 
-   	mult = a * b;
+	mult = a * b;
 	divisor = 1;
 
 	if (mult >= 0)
