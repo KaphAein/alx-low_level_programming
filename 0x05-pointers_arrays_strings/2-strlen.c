@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
 * _strlen - function that takes a pointer
 * @s: pointer
@@ -9,5 +9,12 @@
 
 int _strlen(char *s)
 {
-	return strlen(s);
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
