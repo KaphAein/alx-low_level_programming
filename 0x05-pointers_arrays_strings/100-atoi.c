@@ -25,8 +25,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	j = i - k;
-	for (j; j < i; j++)
+	for (j = i - k; j < i; j++)
 	{
 		finopt += ((*(s + j) - '0') * deci);
 		deci /= 10;
