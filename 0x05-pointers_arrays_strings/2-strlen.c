@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdout>
+#include <stdio>
 /**
 * _strlen - function that takes a pointer
 * @s: pointer
