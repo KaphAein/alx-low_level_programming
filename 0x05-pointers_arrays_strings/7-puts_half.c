@@ -16,11 +16,11 @@ void puts_half(char *str)
 		i++;
 	}
 
-	size = --i;
+	size = i - 2;
 	if (size % 2 == 0)
 		hfsz = size / 2;
 	else if (size % 2 != 0)
-		hfsz = (size - 1) /2;
+		hfsz = (size - 1) / 2;
 	i = 0;
 	while (str[hfsz] != '\0')
 	{
