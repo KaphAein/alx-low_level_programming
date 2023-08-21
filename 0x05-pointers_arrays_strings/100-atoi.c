@@ -30,5 +30,5 @@ int _atoi(char *s)
 		finopt += ((*(s + j) - '0') * deci);
 		deci /= 10;
 	}
-	return (finopt);
+	return (finopt * pn);
 }
