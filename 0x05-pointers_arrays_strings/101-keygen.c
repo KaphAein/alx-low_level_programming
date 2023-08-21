@@ -14,14 +14,14 @@ int main(void) {
 	time_t t;
 
 	srand((unsigned int) time(&t));
-	while (c < 2564)
+	while (c < 2772)
 	{
 		r = rand() % 128;
-		if ((c + r) > 2564)
+		if ((c + r) > 2772)
 			break;
 		c = c + r;
 		printf("%c", r);
 	}
-	printf("%c\n", (2564 - c));
+	printf("%c\n", (2772 - c));
 	return (0);
 }
