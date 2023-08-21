@@ -16,7 +16,7 @@ void puts_half(char *str)
 		i++;
 	}
 
-	size = i;
+	size = i - 1;
 	if (size % 2 == 0)
 		hfsz = size / 2;
 	else if (size % 2 != 0)
