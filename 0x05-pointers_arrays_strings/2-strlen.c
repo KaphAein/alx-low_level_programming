@@ -3,7 +3,6 @@
 /**
 * _strlen - function that takes a pointer
 * @s: pointer
-*
 * return: int
 */
 
