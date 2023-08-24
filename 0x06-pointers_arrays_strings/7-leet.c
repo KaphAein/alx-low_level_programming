@@ -14,7 +14,7 @@ char *leet(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; aeotl[j] || AEOTL[j]; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (s[(i)] == aeotl[j] || s[(i)] == AEOTL[j])
 				s[i] = leet[j];
