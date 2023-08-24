@@ -16,11 +16,8 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (s[(i)] == smallaeotl[j] || s[(i)] == capitaeotl[j])
+			if (s[i] == smallaeotl[j] || s[i] == capitaeotl[j])
 				s[i] = leet[j];
-
-			else
-				continue;
 		}
 	}
 	return (s);
