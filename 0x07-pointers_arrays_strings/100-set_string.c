@@ -2,7 +2,7 @@
 
 /**
  * set_string - function that takes elements
- * @a: element
+ * @s: element
  * @to: element
  * Return: void
  */
