@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _strstr - function that takes elements
+ * @haystack: element
+ * @needle: element
+ * Return: cahr
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	int i;
+
+	i = 0
+	   
+	while (*haystack == *needle && *needle != '\0' && *haystack != '\0')
+	{
+		i = 0;
+		
