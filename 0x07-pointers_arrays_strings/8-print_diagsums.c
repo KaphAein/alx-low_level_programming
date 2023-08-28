@@ -13,7 +13,7 @@ void print_diagsums(int a[][size], int size)
 
 	i = 0;
 	j = size - 1;
-    while (i < (size * size) && j >= 0)
+	while (i < (size * size) && j >= 0)
 	{
 		sum1 += a[i];
 		sum2 += a[j];
