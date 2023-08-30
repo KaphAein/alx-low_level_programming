@@ -27,7 +27,7 @@ int pal(char *str, int start, int end)
 		return (0);
 	else if (start >= end)
 		return (1);
-	return (pal(*str, start++, end--));
+	return (pal(str, start++, end--));
 }
 
 /**
@@ -40,6 +40,6 @@ int is_palindrome(char *s)
 {
 	int l;
 
-	l = str_length(*s);
-	return (pal(*s, 0, (l - 1)));
+	l = str_length(s);
+	return (pal(s, 0, (l - 1)));
 }
