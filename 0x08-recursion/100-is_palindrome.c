@@ -6,7 +6,7 @@
  * Return: int
  */
 
-int str_length(*s)
+int str_length(char *s)
 {
 	if (*s == '\0')
 		return (0);
