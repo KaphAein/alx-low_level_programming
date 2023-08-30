@@ -3,10 +3,10 @@
 /**
  * int _strlen_recursion - function
  * @s: element
- * Return: void
+ * Return: int
  */
 
-void int _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 		return (0);
