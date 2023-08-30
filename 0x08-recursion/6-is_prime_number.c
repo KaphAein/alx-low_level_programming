@@ -9,9 +9,11 @@
 
 int _is_prime(int x, int y)
 {
-	if (x <= 1 || x % y == 0)
+	if (x <= 1)
 		return (0);
-	else if (x == y)
+	if (x % y == 0)
+		return (0);
+	if (y * y > x)
 		return (1);
 	return (_is_prime(x, y + 1));
 }
