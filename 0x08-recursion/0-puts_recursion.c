@@ -8,12 +8,9 @@
 
 void _puts_recursion(char *s)
 {
-	unsigned int i = 0;
+	_putchar(*s);
+	_puts_recursions(s + 1);
 
-	while (i < n)
-	{
-		s[i] = b;
-		i++;
-	}
-	return (s);
+	if (*s == 0)
+		_putchar('\n');
 }
