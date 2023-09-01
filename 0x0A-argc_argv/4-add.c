@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	while (i < argc - 1)
 	{
-		if (**argv > 57 || **argv < 48)
+		if (*argv[i] > 57 || *argv[i] < 48)
 		{
 			printf("Error\n");
 			return (1);
