@@ -1,5 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+
+/**
+ * _isnumber - function
+ * @s: element
+ * Return: On success 1.
+ */
+
+int _isnumber(char *s)
+{
+	int i, r, d;
+
+	i = 0, d = 0, r = 1;
+	if (*s == '-')
+		i++;
+	for (i; *(s + i) != 0; i++)
+	{
+		d = isdigit(*(s + i));
+		if (d == 0)
+		{
+			r = 0;
+			break;
+		}
+	}
+	return (r);
+}
 
 /**
  * main - Entry point
@@ -8,29 +34,24 @@
  * Return: Always 0 (Success)
  */
 
-
 int main(int argc, char **argv)
 {
-	int i = 1, sum = 0;
+	int i, sum  = 0, r = 0;
 
-	if (**argv > '9' || **argv < '0')
+	if (argc > 1)
 	{
-		printf("Error\n");
-		return (1);
-	}
-
-	if (argc == 1)
-		printf("0\n");
-
-	else if (argc > 1 || **argv == '-')
-	{
-		while (i < argc - 1)
+		for (i = 1; i < argc; i++)
 		{
-			sum += atoi(argv[i]);
-			i++;
+			if (_isnumber(argv[i]))
+				sum += atoi(argv[i]);
+			else
+				r = 1;
 		}
 	}
-	printf("%i\n", sum);
+	if (r == 0)
+		printf("0\n");
+	else
+		printf("Error\n");
 
-	return (0);
+	return (r);
 }
