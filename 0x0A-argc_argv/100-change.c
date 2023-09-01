@@ -1,71 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdbool.h>
 
 /**
- * coin - function
- * @i: element
- * Return: int
- */
-int coin(int i)
-{
-	int j = 0;
+ * main - prints minimum number coins to make change for an amount of money.
+ * @argc: number of arguments
+ * @argv: array with the arguments
+ *
+ * Return: always 0
+ **/
 
-	while (i != 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
-		}
-		else
-			i -= 1;
-
-		j++;
-	}
-
-	return (j);
-}
-
-/**
- * main - entry point
- * @argc: element
- * @argv: element
- * Return: 1 on success
- */
 int main(int argc, char *argv[])
 {
-	int i, j;
-
-	j = 0;
+	int dev = 0, coins = 0;
+	char c[] = "Error";
 
 	if (argc != 2)
 	{
-		printf("Error\n");
+		printf("%s\n", c);
 		return (1);
 	}
-
-	i = atoi(argv[1]);
-
-	if (i < 0)
-		printf("0\n");
-	else
+	dev = atoi(argv[1]);
+	while (dev >= 25)
 	{
-		j = coin(i);
-
-		printf("%d\n", j);
+		dev -= 25;
+		coins++;
 	}
-
+	while (dev >= 10)
+	{
+		dev -= 10;
+		coins++;
+	}
+	while (dev >= 5)
+	{
+		dev -= 5;
+		coins++;
+	}
+	while (dev >= 2)
+	{
+		dev -= 2;
+		coins++;
+	}
+	if (dev == 1)
+		coins++;
+	printf("%d\n", coins);
 	return (0);
 }
