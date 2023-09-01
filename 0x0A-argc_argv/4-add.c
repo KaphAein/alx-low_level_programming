@@ -8,6 +8,7 @@
  * Return: Always 0 (Success)
  */
 
+
 int main(int argc, char **argv)
 {
 	int i = 1, sum = 0;
@@ -21,7 +22,7 @@ int main(int argc, char **argv)
 	if (argc == 1)
 		printf("0\n");
 
-	else if (argc > 1)
+	else if (argc > 1 || **argv == '-')
 	{
 		while (i < argc - 1)
 		{
