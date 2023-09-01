@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	if (argc == 3)
-		printf("%i\n", (int)(argv[1] * argv[2]));
+		printf("%i\n", (int) (argv[1] * argv[2]));
 	else if (argc < 3)
 		printf("Error");
 
