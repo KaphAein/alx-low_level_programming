@@ -47,9 +47,9 @@ int main(int argc, char **argv)
 				r = 1;
 		}
 	}
-	if (argc < 1)
+	if (argc < 2)
 		printf("0\n");
-	else
+	else if (!_isnumber(argv[i]))
 		printf("Error\n");
 
 	return (r);
