@@ -10,9 +10,8 @@
 
 int _isnumber(char *s)
 {
-	int i, r, d;
+	int i = 0, r = 1, d = 0;
 
-	i = 0, d = 0, r = 1;
 	if (*s == '-')
 		i++;
 	for (i; *(s + i) != 0; i++)
