@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 				r = 1;
 		}
 	}
-	if (r == 0)
+	if (argc < 1)
 		printf("0\n");
 	else
 		printf("Error\n");
