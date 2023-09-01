@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - prints minimum number coins to make change for an amount of money.
- * @argc: number of arguments
- * @argv: array with the arguments
+ * main - entry point
+ * @argc: element
+ * @argv: element
  *
  * Return: always 0
  **/
 
 int main(int argc, char *argv[])
 {
-	int dev = 0, coins = 0;
+	int sum = 0, coins = 0;
 	char c[] = "Error";
 
 	if (argc != 2)
@@ -19,28 +19,28 @@ int main(int argc, char *argv[])
 		printf("%s\n", c);
 		return (1);
 	}
-	dev = atoi(argv[1]);
-	while (dev >= 25)
+	sum = atoi(argv[1]);
+	while (sum >= 25)
 	{
-		dev -= 25;
+		sum -= 25;
 		coins++;
 	}
-	while (dev >= 10)
+	while (sum >= 10)
 	{
-		dev -= 10;
+		sum -= 10;
 		coins++;
 	}
-	while (dev >= 5)
+	while (sum >= 5)
 	{
-		dev -= 5;
+		sum -= 5;
 		coins++;
 	}
-	while (dev >= 2)
+	while (sum >= 2)
 	{
-		dev -= 2;
+		sum -= 2;
 		coins++;
 	}
-	if (dev == 1)
+	if (sum == 1)
 		coins++;
 	printf("%d\n", coins);
 	return (0);
