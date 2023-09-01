@@ -14,6 +14,6 @@ int main(int argc, char **argv)
 		printf("%i\n", (int)(argv[1] * argv[2]));
 	else if (argc < 3)
 		printf("Error");
-	}
+
 	return (0);
 }
