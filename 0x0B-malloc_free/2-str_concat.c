@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *str_concat
+ * *str_concat - function
  * @s1: element
  * @s2: element
  * Return: char or NULL
@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s1 = "";
+		s2 = "";
 
 	while (s1[i] != '\0')
 		i++;
