@@ -35,6 +35,6 @@ char *argstostr(int ac, char **av)
 		a[j++] = av[i][arglen++];
 	a[j++] = '\n';
 	}
-	a[totlen]  = '\n';
+	a[totlen]  = '\0';
 	return (a);
 }
