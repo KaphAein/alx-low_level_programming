@@ -48,14 +48,14 @@ char **strtow(char *str)
 	int l, l2, wc, i, j, fr, k;
 
 	if (str == NULL || *str == 0)
-		return (0);
+		return (NULL);
 	fr = 0;
 	wc = _wcount(str);
 	if (wc == 0)
-		return (0);
+		return (NULL);
 	s = malloc((wc + 1) * sizeof(char *));
 	if (s == 0)
-		return (0);
+		return (NULL);
 	ts = _trspace(str);
 	for (i = 0; i < wc; i++)
 	{
