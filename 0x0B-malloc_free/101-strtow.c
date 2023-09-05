@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * _wcount - counts number of words
- * @sw: string
+ * @swc: string
  *
  * Return: int
  */
@@ -73,7 +73,6 @@ char **strtow(char *str)
 		s[i][j] = '\0';
 		ts = _trspace(ts + l);
 	}
-	s[i] = NULL;
 	if (fr == 1)
 	{
 		for (k = 0; k <= i; k++)
