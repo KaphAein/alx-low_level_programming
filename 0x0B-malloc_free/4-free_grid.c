@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid -  function that frees a 2 dimensional grid previously created by alloc_grid function.
+ * free_grid -  function that frees a 2 dimensional grid
  * @grid: two dimensional array
  * @height: number of rows
  * Return: void
