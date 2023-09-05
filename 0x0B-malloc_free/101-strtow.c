@@ -9,7 +9,7 @@
  */
 int _wcount(char *swc)
 {
-	int l, wc;
+	int i, wc;
 
 	i = 0, wc = 0;
 	if (swc[i] == ' ')
