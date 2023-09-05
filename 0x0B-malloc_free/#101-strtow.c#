@@ -18,6 +18,8 @@ int _wcount(char *swc)
 	{
 		if (swc[i] == ' ' && swc[i + 1] != ' ')
 			wc++;
+		if (swc[i] != ' '  && swc[i + 1] == 0)
+			wc++;
 		i++;
 	}
 	return (wc);
