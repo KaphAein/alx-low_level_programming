@@ -3,22 +3,24 @@
 #include <stdlib.h>
 /**
  * _wcount - counts number of words
- * @swc: string
+ * @sw: string
  *
  * Return: int
  */
-int _wcount(char *swc)
+int _wcount(char *sw)
 {
-	int i, wc;
+	int l, wc;
 
-	i = 0, wc = 0;
-	if (swc[i] == ' ')
-		i++;
-	while (swc[i])
+	l = 0, wc = 0;
+	if (*(sw + l) == ' ')
+		l++;
+	while (*(sw + l))
 	{
-		if (swc[i] == ' ' && swc[i + 1] != ' ')
+		if (*(sw + l) == ' ' && *(sw + l - 1) != ' ')
 			wc++;
-		i++;
+		if (*(sw + l) != ' '  && *(sw + l + 1) == 0)
+			wc++;
+		l++;
 	}
 	return (wc);
 }
@@ -46,14 +48,14 @@ char **strtow(char *str)
 	int l, l2, wc, i, j, fr, k;
 
 	if (str == NULL || *str == 0)
-		return (NULL);
+		return (0);
 	fr = 0;
 	wc = _wcount(str);
 	if (wc == 0)
-		return (NULL);
+		return (0);
 	s = malloc((wc + 1) * sizeof(char *));
 	if (s == 0)
-		return (NULL);
+		return (0);
 	ts = _trspace(str);
 	for (i = 0; i < wc; i++)
 	{
@@ -78,6 +80,5 @@ char **strtow(char *str)
 			free(s[k]);
 		free(s);
 	}
-
 	return (s);
 }
