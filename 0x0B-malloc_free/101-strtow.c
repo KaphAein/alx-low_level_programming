@@ -57,7 +57,7 @@ char **strtow(char *str)
 	if (s == 0)
 		return (0);
 	ts = _trspace(str);
-	for (i = 0; i < wc; i++)
+	for (i = 0; i < wc  - 1; i++)
 	{
 		l = 0;
 		while (*(ts + l) != ' ' && *(ts + l) != 0)
@@ -73,11 +73,13 @@ char **strtow(char *str)
 		s[i][j] = '\0';
 		ts = _trspace(ts + l);
 	}
+	s[i] = NULL;
 	if (fr == 1)
 	{
 		for (k = 0; k <= i; k++)
 			free(s[k]);
 		free(s);
 	}
+
 	return (s);
 }
