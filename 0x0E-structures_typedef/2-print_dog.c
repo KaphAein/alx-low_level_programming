@@ -13,16 +13,16 @@ void print_dog(struct dog *d)
 	d = malloc(sixeof(struct dog));
 	if (d == NULL)
 		return;
-	if (name == NULL)
+	if (d->name == NULL)
 		printf("Name: (nil)");
-	if (age == NULL)
+	if (d->age == NULL)
 		printf("Age: (nil)");
-	if (owner == NULL)
+	if (d->owner == NULL)
 		printf("Owner: (nil)");
 	else
 	{
-		printf("Name: %s\n", d.name->name);
-		printf("Age: %d\n", d.age->age);
-		printf("Owner: %s\n" d.owner->owner);
+		printf("Name: %s\n", d->name);
+		printf("Age: %d\n", d->age);
+		printf("Owner: %s\n" d->owner);
 	}
 }
