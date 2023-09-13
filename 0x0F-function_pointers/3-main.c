@@ -4,7 +4,8 @@
 
 /**
  * main - Entry point
- *
+ * @argc: element
+ * @argv: element
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = (*get_op_func(operator))(num1, num2);
-   	printf("%d\n", result);
+	printf("%d\n", result);
 
-    return (0);
+	return (0);
 }
