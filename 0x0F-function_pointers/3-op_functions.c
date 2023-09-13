@@ -1,4 +1,3 @@
-#include "function_pointers.h"
 #include "3-calc.h"
 
 /**
@@ -11,7 +10,6 @@ int op_add(int a, int b)
 {
 	return (a + b);
 }
-
 /**
  * op_sub - function that takes a pointer
  * @a: element
