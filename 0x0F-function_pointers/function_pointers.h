@@ -1,6 +1,9 @@
 #ifndef FUNCTION_PONTERS_H
 #define FUNCTION_PONTERS_H
 
+#include <stdlib.h>
+#include <stddef.h>
+#include <stdio.h>
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
