@@ -2,62 +2,44 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * print_all - prints anthing, followed by a new line.
  * @format: number of args
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int a = 0, b = 0;
-	char c;
-	int i;
-	float f;
-	char *s;
-	const char * const cifs = "cifs";
-
+	unsigned int a = 0;
+	char * str;
 	va_start(args, format);
 
-	while (format !='\0')
+	while (format[a] != '\0')
 	{
-		while (cifs[b])
-		{
-			if (format[a] == cifs[b] &&
-				format[(a + 1)] != '\0')
-			{
-				printf(", ");
-				break;
-			} b++;
-		}
 		switch (format[a])
 		{
 		case 'c':
-			c = va_arg(args, char);
-			printf("%c", c);
+			printf("%c", va_arg(args, int));
 			break;
 		case 'i':
-			i = va_arg(args, int);
-			printf("%d", i);
+			printf("%d", va_arg(args, int));
 			break;
 		case 'f':
-			f = va_arg(args, float);
-			printf("%f", f);
+			printf("%f", va_arg(args, double));
 			break;
 		case 's':
-			s = va_arg(args, char *);
-			if (s == NULL)
+			str = va_arg(args, char *);
+			if (str == NULL)
 			{
 				printf("(nil)");
 				break;
 			}
-			printf("%s", s);
+			printf("%s", str);
 			break;
-
 		}
-		a++
+		if (format[a + 1] != '\0')
+			printf(", ");
+		a++;
 	}
 	printf("\n");
 	va_end(args);
