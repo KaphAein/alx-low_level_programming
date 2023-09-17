@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * print_all - prints anthing, followed by a new line.
  * @format: number of args
@@ -15,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format[a] != '\0')
+	while (format != NULL && format[a] != '\0')
 	{
 		switch (format[a])
 		{
