@@ -7,7 +7,7 @@
  *
  * Return: int
  */
-int _wcount(char *sw)
+int _wcount(char *sw)OB
 {
 	int l, wc;
 
