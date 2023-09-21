@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * before_main - function executed before main
+ * freebie - function executed before main
  * Return: void.
  */
 
