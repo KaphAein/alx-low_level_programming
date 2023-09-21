@@ -2,7 +2,8 @@
 
 /**
  * add_node - function that adds a new node
- * @h: list to  be handled by function
+ * @head: list to  be handled by function
+ * @str: string inside node
  * Return: number adress of new node or NULL
  */
 
@@ -21,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new->str == NULL)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
 
 	new->next = head;
