@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * free_list - function frees list
- * @head: list to  be handled by function
+ * free_listint - function frees list
+ * @head: list to be handled by function
  * Return: void
  */
 
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *current;
+	listint_t *current;
 
 	if (head == NULL)
 	{
@@ -19,7 +19,6 @@ void free_list(list_t *head)
 	{
 		current = head;
 		head = head->next;
-		free(current->str);
 		free(current);
 	}
 }
