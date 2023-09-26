@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint - function that adds a new node at the beginning
- * @h: list to  be handled by function
+ * @n: element int
  * @head: first element of linked list
  * Return: adress for the new element
  */
@@ -15,6 +15,7 @@ listint_t *add_nodeint(listint_t **head, const int n);
 	{
 		return (NULL);
 	}
+
 	first = malloc(sizeof(listint_t));
 	if (first == NULL)
 		return (NULL);
