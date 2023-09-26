@@ -3,7 +3,6 @@
 /**
  * sum_listint - function that returns the sum of all the data
  * @head: list to  be handled by function
- * @index: of node
  * Return: sum or NULL
  */
 
