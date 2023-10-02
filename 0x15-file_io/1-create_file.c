@@ -18,11 +18,11 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content == NULL)
 		return (-1);
-	for (len = 0; textcontent != '\0'; len++)
+	for (len = 0; text_content != '\0'; len++)
 		;
 	fw = write(fd, text_content, len);
 	if (fw == -1)
 		return(-1);
-	close(fd)
-		return(1);
+	close(fd);
+	return(1);
 }
