@@ -1,0 +1,58 @@
+#include "main.h"
+
+/**
+ * add - function that adds two int
+ * @a: element
+ * @b: element
+ * Return: result
+ */
+int add(int a, int b)
+{
+	return (a + b);
+}
+/**
+ * sub - function that subbs two int
+ * @a: element
+ * @b: element
+ * Return: result
+ */
+int sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * mul - function that muls two int
+ * @a: element
+ * @b: element
+ * Return: result
+ */
+int mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * div - function that divs two int
+ * @a: element
+ * @b: element
+ * Return: result
+ */
+int div(int a, int b)
+{
+	if (b != 0)
+		return (a / b);
+	else
+		return (0);
+}
+/**
+ * mod - function that mods two int
+ * @a: element
+ * @b: element
+ * Return: result
+ */
+int div(int a, int b)
+{
+        if (b != 0)
+                return (a % b);
+        else
+                return (0);
+}
