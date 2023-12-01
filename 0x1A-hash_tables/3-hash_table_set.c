@@ -34,10 +34,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 	{
+		free(valueDup);
+		return (0);
+	}
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
 		free(new);
 		return (0);
 	}
-	new->value = valueDup;
+	new->value = value_copy;
 	new->next = ht->array[index];
 	ht->array[index] = new;
 
