@@ -14,10 +14,10 @@ def island_perimeter(grid):
                 perim += 4
                 if grid[i][j + 1] == 1 and j + 1 < width:
                     perim -= 1
-                if grid[i][j - 1] == 1 and j - 1 > 0:
+                if grid[i][j - 1] == 1 and j - 1 >= 0:
                     perim -= 1
                 if grid[i + 1][j] == 1 and i + 1 < height:
                     perim -= 1
-                if grid[i - 1][j] == 1 and i - 1 > 0:
+                if grid[i - 1][j] == 1 and i - 1 >= 0:
                     perim -= 1
     return perim
